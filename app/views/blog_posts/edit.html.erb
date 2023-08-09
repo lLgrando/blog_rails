@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+
+  <body>
+
+    <h1>MY BLOG</h1>
+
+    <%= render partial: "form", locals: {blog_post: @blog_post} %>
+
+    <%= button_to "Delete", @blog_post, method: :delete, data: {turbo_confirm: "Are you sure?"}  %>
+
+  </body>
+</html>
